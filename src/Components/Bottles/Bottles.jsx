@@ -15,6 +15,7 @@ const Bottles = () => {
 
     const handleAddToCart = bottle=>{
         console.log('bottle added')
+        console.log(bottle);
     }
 
     return (
