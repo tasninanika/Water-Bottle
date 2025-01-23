@@ -14,7 +14,8 @@ const Bottles = () => {
 
     return (
         <div>
-            <h2>Bottles</h2>
+            <h2>BOTTLES</h2>
+            <p>Total Bottle: {bottles.length}</p>
             <div className="bottle-container">
             {
                     bottles.map(bottle=>
