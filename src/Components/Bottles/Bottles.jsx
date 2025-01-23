@@ -19,6 +19,15 @@ const Bottles = () => {
     useEffect(()=>{
         if(bottles.length > 0){
             const storedCart = getStoredCart();
+            const savedCart = [];
+            for(const id of storedCart){
+                const bottle = bottles.find(bottle =>bottle.id === id);
+                if(bottle){
+                    savedCart.push(bottle)
+                }
+            }
+            setCart(savedCart);
+
         }
     },[bottles])
 
