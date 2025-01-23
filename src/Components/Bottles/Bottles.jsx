@@ -38,11 +38,15 @@ const Bottles = () => {
         addToLS(bottle.id);
     }
 
+    const handleRemoveFromCart = id =>{
+        removeFromLS(id);
+    }
+
     return (
         <div>
             <h2>WATER BOTTLES</h2>
             <p>Bottles Available: {bottles.length}</p>
-            <Cart key={cart.id} cart={cart}></Cart>
+            <Cart key={cart.id} cart={cart} handleRemoveFromCart={handleRemoveFromCart}></Cart>
             <div className="bottle-container">
             {
                     bottles.map(bottle=>

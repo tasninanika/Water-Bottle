@@ -22,6 +22,7 @@ const removeFromLS = id =>{
     const cart = getStoredCart();
     // removing every id
     const remaining = cart.filter(idx => idx !== id);
+    saveCartToLS(remaining);
 }
 
-export { addToLS, getStoredCart }
+export { addToLS, getStoredCart, removeFromLS }
