@@ -9,9 +9,9 @@ const Cart = ({cart, handleRemoveFromCart}) => {
                 {
                     cart.map(bottle=>
                         <div key={bottle.id}>
-                         <img key={bottle.id} src={bottle.img}></img>
+                         <img src={bottle.img}></img>
                          <div>
-                         <button className='cart-button' onClick={()=>handleRemoveFromCart(bottle.id)}>Remove</button>
+                         <button className='cart-button' onClick={()=> handleRemoveFromCart(bottle.id)}>Remove</button>
                          </div>
                          </div>)
                 }
@@ -23,6 +23,7 @@ const Cart = ({cart, handleRemoveFromCart}) => {
 Cart.propTypes ={
     cart: PropTypes.array.isRequired,
     handleRemoveFromCart: PropTypes.func.isRequired
+
 }
 
 export default Cart;
