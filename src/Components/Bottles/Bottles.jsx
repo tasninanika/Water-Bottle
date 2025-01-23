@@ -39,6 +39,10 @@ const Bottles = () => {
     }
 
     const handleRemoveFromCart = id =>{
+        // visual cart remove
+        const remainingCart = cart.filter(bottle => bottle.id !== id);
+        setCart(remainingCart);
+        // remove from LS
         removeFromLS(id);
     }
 
