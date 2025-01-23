@@ -6,8 +6,7 @@ const Bottle = ({bottle}) => {
 
     return (
         <div className='bottle'>
-            <h2>hello</h2>
-            <p>Name: {name}</p>
+            <p>{name}</p>
             <img src={img} alt="" className='img'/>
             <p>Price: ${price}</p>
         </div>
