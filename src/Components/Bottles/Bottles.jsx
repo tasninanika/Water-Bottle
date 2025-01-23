@@ -42,7 +42,7 @@ const Bottles = () => {
         <div>
             <h2>WATER BOTTLES</h2>
             <p>Bottles Available: {bottles.length}</p>
-            <Cart  cart={cart}></Cart>
+            <Cart key={cart.id} cart={cart}></Cart>
             <div className="bottle-container">
             {
                     bottles.map(bottle=>
