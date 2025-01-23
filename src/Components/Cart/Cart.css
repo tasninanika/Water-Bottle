@@ -1,4 +1,13 @@
 .cart-container img{
     width: 100px;
     margin-right: 10px;
+    margin-top: 20px;
+}
+.cart-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.cart-button{
+    font-size: 10px;
 }
